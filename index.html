@@ -5,29 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>BoxFlexbox</title>
+    <title>BoxFlexbox - Home</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="pages/snippets.html">Snippets</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>BoxFlexbox |_|</h1>
         <p>Ett bra sätt att lära sig flexbox.</p>
     </header>
 
-    <div class="container">
-        <img class="square" src="/img/square.png">
-        <img class="square" src="/img/square.png">
-        <img class="square" src="/img/square.png">
-    </div>
+    <!-- Våran flex container -->
+    <div id="container">
+        <!-- Flex item -->
+        <div>
+            <h1>|_|</h1>
+        </div>
 
-    <div class="cmd">
-        <p id="task">Välkommen till flexbox, jag kommer vara med dig idag och lära dig flexbox. Du kommer lära dig genom att skriva text in i inputen, och sedan submitta. För att visa att du fattat, skriv "Fattar"</p>
+        <!-- Flex item -->
+        <div>
+            <h1>|_|</h1>
+        </div>
 
-        <div class="cmd-input">
-            <input id="cmdText" type="text" placeholder="...">
-            <button id="cmdSubmit">Submit</button>            
+        <!-- Flex item -->
+        <div>
+            <h1>|_|</h1>
         </div>
     </div>
+    
 
+    <!-- Information och command input -->
+    <div class="cmd">
+
+        <!-- Vad de ska göra -->
+        <p id="task">Välkommen till flexbox, jag kommer vara med dig idag och lära dig flexbox. Du kommer lära dig genom att skriva text in i inputen, och sedan submitta. För att visa att du fattat, skriv (Fattar)</p>
+        
+        <!-- Vad de skriver in/Input -->
+        <input id="cmdText" type="text" placeholder="Press enter">
+    </div>
+
+    <!-- Våran javascript -->
     <script src="scripts.js"></script>
 </body>
 </html>

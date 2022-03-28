@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>BoxFlexbox - Snippets</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="snippets.html">Snippets</a></li>
+        </ul>
+    </nav>
+
+    <div class="flex-container">
+        <!-- Shows flex-flow row and what it does-->
+        <h2 id="flow">Different orientations of flex</h2>
+        <div class="flow-horizontal">
+            <p>With flex-flow: row; We can have horizontally aligning items</p>
+            <div class="horizontal-item">
+                <h3>Flex flow row</h3>
+            </div>
+            <div class="horizontal-item">
+                <h3>Flex flow row</h3>
+            </div>
+        </div>
+
+        <!-- Shows flex-flow column and what it does. -->
+        <div class="flow-vertical">
+            <p>With flex-flow: column; We can have vertically aligning items</p>
+            <div class="vertical-item">
+                <h3>Flex flow column</h3>
+            </div>
+            <div class="vertical-item">
+                <h3>Flex flow column</h3>
+            </div>
+        </div>
+
+        <!-- Shows flex-flow column-reverse and what it does. -->
+        <div class="flow-reverse-vertical">
+            <p>We can also reverse the flexbox using flex-flow: column-reverse, this also works for rows.</p>
+            <div class="vertical-item">
+                <h3>Flex flow reverse-column</h3>
+            </div>
+            <div class="vertical-item">
+                <h3>Flex flow reverse-column</h3>
+            </div>
+        </div>
+        
+        <!-- Shows the difference between not using flex-wrap and using flex-wrap -->
+        <div class="wrapped-items">
+            <h2 id="wrap">What flex-wrap does</h2>
+            <p>Without flex-wrap: wrap; the flexbox does not adjust itself if the width of the flexbox is too small, this is the default setting.</p>
+            <div class="unwrapped">
+                <h3>Item #1</h3>
+                <h3>Item #2</h3>
+                <h3>Item #3</h3>
+                <h3>Item #4</h3>
+            </div>
+
+            <p>With flex-wrap: wrap; the flexbox adjustes to fit all items.<br>To use flex-wrap you simply declare 'flex-wrap: wrap;' for the flexbox you want to wrap.</p>
+            <div class="wrapped">
+                <h3>Item #1</h3>
+                <h3>Item #2</h3>
+                <h3>Item #3</h3>
+                <h3>Item #4</h3>
+            </div>
+        </div>
+
+        <!-- Shows what flex-grow & flex-shrink does-->
+        <div class="grow-shrink-items">
+            <h2 id="grow-shrink">What flex-grow & flex-shrink does</h2>
+            <p>Here we have a div with 3 h3 tags. <br> The grow #1 has flex-grow: 1; set to it, the grow #2 has flex-grow: 2; set to it.<br> The property flex-grow defines how much of the remaining space an item should take <br> In our example #1 takes 1 remaining space, #2 takes 2 remaining spaces. <br> Flex-grow takes a parameter of an number (defaulted to 0)</p>
+            <div class="grow">
+                <h3 class="grow-1">I grow #1</h3>
+                <h3 class="grow-2">I grow #2</h3>
+                <h3>I don't grow</h3>
+                <!--h3{Item #$}*4 results in-->
+            </div>
+            <div class="shrink">
+                <h3 class="shrink-1">I shrink #1</h3>
+                <h3 class="shrink-2">I shrink #2</h3>
+                <h3>I don't shrink</h3>
+                <!--h3{Item #$}*4 results in-->
+            </div>
+        </div>
+
+        <!-- How different flex items can be aligned. -->
+        <div class="alignment">
+            <h2 id="align">How to position things in a flexbox</h2>
+            <p class="alignment-left">align-self: flex-start;</p>
+            <p class="alignment-center">align-self: center;</p>
+            <p class="alignment-right">align-self: flex-end;</p>
+        </div>
+</body>
+</html>

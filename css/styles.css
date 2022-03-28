@@ -13,14 +13,149 @@ header {
     margin-top: 3%;
 }
 
-.container {
+nav ul {
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 3%;
+    padding: 0%;
+    gap: 2%;
 }
 
-.square {
-    width: 10%;
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 4vh;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.active a {
+    color: white;
+}
+
+.active a:hover {
+    color: black;
+}
+
+.flow-horizontal {
+    /* Set the display to flex, and the flow of content to be a column of its own on each line */
+    display: flex;
+    flex-flow: row;
+
+    /* Gap between each flex item */
+    gap: 30px;
+    background-color: rgb(21, 197, 95);
+
+    /* Width of the flexbox, takes up the entire page if not changed. */
+}
+
+.flow-vertical {
+    /* Set the display to flex, and the flow of content to be a column of its own on each line */
+    display: flex;
+    flex-flow: column;
+    margin-top: 2%;
+
+    /* Gap between each flex item */
+    gap: 30px;
+    background-color: rgb(21, 197, 95);
+
+    /* Width of the flexbox, takes up the entire page if not changed. */
+}
+
+.flow-reverse-vertical {
+    /* Set the display to flex, and the flow of content to be a column of its own on each line
+       But reversed since column-reverse puts the first html item on the last line in display. */
+    display: flex;
+    flex-flow: column-reverse;
+    margin-top: 2%;
+
+    /* Gap between each flex item */
+    gap: 30px;
+    background-color: rgb(21, 197, 95);
+
+    /* Width of the flexbox, takes up the entire page if not changed. */
+}
+
+/* Flex-wrap/wrapped-items */
+/* Utan användningen av wrap */
+.unwrapped {
+    display: flex;
+    flex-flow: row;
+    margin-top: 2%;
+    gap: 30px;
+    background-color: rgb(21, 197, 95);
+    width: 18%;
+}
+
+/* Med användningen av wrap */
+.wrapped {
+    display: flex;
+    flex-flow: row;
+    margin-top: 2%;
+    gap: 30px;
+    background-color: rgb(21, 197, 95);
+    width: 18%;
+
+    /* Flex-wrap ser till så att flexboxen anpassar sig efter hur mycket utrymme som finns kvar
+       Så t.e.x ifall ett flex-item går utanför flexboxen så kommer flexboxen anpassa sin storlek till det  */
+    flex-wrap: wrap;
+}
+
+/* Flex-grow & Flex-shrink */
+.grow, .shrink {
+    display: flex;
+    width: 50%;
+    gap: 30px;
+    margin-bottom: 2%;
+    background-color: rgb(21, 197, 95);
+}
+
+.shrink {
+    width: 20%;
+}
+
+.grow > h3, .shrink > h3 {
+    background-color: blue;
+}
+
+/* Grow-1 makes the I grow #1 text take up the remaining space of 1 items */
+.grow-1 {
+    flex-grow: 1;
+}
+
+/* Grow-2 makes the I grow #2 text take up the remaining space of 2 items */
+.grow-2 {
+    flex-grow: 2;
+}
+
+/* Alignment */
+.alignment {
+    /* Create the flexbox */
+    display: flex;
+    flex-flow: column;
+}
+
+.alignment > p {
+    background-color: rgb(21, 197, 95);
+}
+
+/* Align each alignment to either the start, center or end of the flexbox object */
+.alignment-left {
+    align-self: flex-start;
+}
+
+.alignment-center {
+    align-self: center;
+}
+
+.alignment-right {
+    align-self: flex-end;
 }
 
 .cmd {
@@ -30,32 +165,22 @@ header {
     margin-top: 2%;
 }
 
-.cmd-input {
-    display: flex;
-    gap: 10%;
-}
-
 #task {
-    width: 400px;
+    width: 40%;
     text-align: center;
     transition: opacity .5s ease;
 }
 
 #cmdText {
     border: none;
-    padding: 2%;
+    padding: 1vh;
     background-color: rgb(21, 197, 95);
 }
 
-#cmdSubmit {
-    border: none;
-    padding: 4%;
-    cursor: pointer;
-    background-color: rgb(21, 197, 95);
+#cmdText::placeholder {
+    color: rgb(80, 85, 90);
 }
-
 
 .fade{
     opacity: 0;
 }
-  
