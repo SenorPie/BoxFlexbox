@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Fredoka;
+    src: url("../fonts/Fredoka.ttf");
+}
+
+body {
+    font-family: Fredoka;
+    background-color: rgb(95, 219, 95);
+}
+
+header {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.square {
+    width: 10%;
+}
+
+.cmd {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.cmd-input {
+    display: flex;
+    gap: 10%;
+}
+
+#task {
+    width: 400px;
+    text-align: center;
+    transition: opacity .5s ease;
+}
+
+#cmdText {
+    border: none;
+    padding: 2%;
+    background-color: rgb(21, 197, 95);
+}
+
+#cmdSubmit {
+    border: none;
+    padding: 4%;
+    cursor: pointer;
+    background-color: rgb(21, 197, 95);
+}
+
+
+.fade{
+    opacity: 0;
+}
+  
