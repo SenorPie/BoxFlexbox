@@ -121,7 +121,7 @@ nav ul li a:hover {
 }
 
 .grow > h3, .shrink > h3 {
-    background-color: blue;
+    background-color: rgb(24, 168, 84);
 }
 
 /* Grow-1 makes the I grow #1 text take up the remaining space of 1 items */
